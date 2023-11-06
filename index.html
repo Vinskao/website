@@ -9,20 +9,63 @@
     />
     <!-- <meta http-equiv="refresh" content="3;url=https://ty-multiverse.netlify.app/"> -->
     <link rel="stylesheet" href="styles/st1.css" />
+    <link rel="stylesheet" href="styles/list.css" />
+
     <!--此網頁的自訂樣式寫在下方會覆蓋css-->
-    <style>
-      h2 {
-        color: green;
-      }
-    </style>
+    <style></style>
     <script></script>
   </head>
 
   <body>
     <h2 title="fruit">apple</h2>
     <a href="list.html">to list</a>
+    <a href="form.html">to form</a>
     <a href="#b1">to list</a>
+    <table class="tb">
+      <caption>
+        <h4>List</h4>
+      </caption>
+      <thead>
+        <th>q</th>
+        <th>q</th>
+        <th colspan="2">q</th>
+        <th>q</th>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1c</td>
+          <td colspan="3">2c</td>
 
+          <td>5</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>2sa</td>
+          <td>3</td>
+          <td rowspan="3">4</td>
+          <td>5</td>
+        </tr>
+        <tr>
+          <td>1c</td>
+          <td>2</td>
+          <td>3</td>
+          <td>5</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>2</td>
+          <td>3</td>
+          <td>5</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>2</td>
+          <td>3</td>
+          <td>4</td>
+          <td>5</td>
+        </tr>
+      </tbody>
+    </table>
     <h3 title="name" style="background-color: yellow">Sorane</h3>
     top
     <div>div</div>
@@ -48,12 +91,25 @@
       document.getElementById("#b2").style.color = "blue";
     </script>
     <figcaption>sorane</figcaption>
-    
-    <ul>
+
+    <ul class="list">
       <li><a href="www.google.com">gggg</a></li>
       <li><a href="list.html">wwwww</a></li>
       <li><a href="hyperlink.html">eeeeee</a></li>
+      <ol class="list2">
+        <li class="in">ff</li>
+        <li>ss</li>
+        <li>ff</li>
+        <li>ss</li>
+        <li class="out">ff</li>
+      </ol>
     </ul>
+
+    <img class="img1" src="images/dog.jpg" alt="" /><img
+      class="img2"
+      src="images/dog.jpg"
+      alt=""
+    />
     <p>
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat officia
       tenetur consectetur! Non consectetur minima omnis distinctio esse eaque.
@@ -85,7 +141,6 @@
     <p id="b1">lorem100</p>
     <script>
       document.getElementById("#b2").style.fontSize = "20px";
-      
     </script>
   </body>
 </html>

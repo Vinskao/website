@@ -1,35 +1,148 @@
 h2 {
-    color: yellow;
-    border-radius: 3;
-    text-align: center;
-    font-size: 90px;
+  color: yellow;
+  border-radius: 3;
+  text-align: center;
+  font-size: 90px;
+}
+* {
+  margin: 0px;
+}
+.img1 {
+  width: 200px;
+  box-sizing: border-box;
+  padding: 30px;
+  border: 2px solid red;
+  float: right;
+}
+.img2 {
+  width: 200px;
+  box-sizing: border-box;
+  padding: 30px;
+  border: 2px solid red;
+  float: left;
 }
 
 #b1 {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: blue;
-    text-transform: capitalize;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: blue;
+  text-transform: capitalize;
 }
 
 p {
-    color: green;
+  color: green;
+  clear: both;
 }
 
-a:link {
-    text-decoration: double;
-    color: red;
+p:hover {
+  color: orange;
 }
 
-a:visited {
-    color: orange;
+.list {
+  list-style-type: none;
+  list-style-image: url("../images/dog.jpg");
 }
 
-a:hover {
-    text-shadow: 1cap;
-    color: #adc29c;
-    text-rendering: var(90px);
+.list2 {
+  list-style-image: none;
+  list-style-type: upper-latin;
 }
 
-a:active {
-    font-size: x-large;
+.list a:link {
+  text-decoration: double;
+  color: red;
+}
+
+.list a:visited {
+  color: orange;
+}
+
+.list > li > a:hover {
+  text-shadow: 1cap;
+  color: #adc29c;
+  text-rendering: var(90px);
+}
+
+.list > li > a:active {
+  font-size: x-large;
+}
+
+.tb {
+  border: 1px dotted #346342;
+  width: 400px;
+  /* border-collapse: collapse; */
+  border-spacing: 0;
+}
+
+td,
+th {
+  border: 1px solid #346342;
+}
+
+th:first-child {
+  border-top-left-radius: 20px;
+}
+
+tr td:nth-child(5) {
+  border: 5px solid #346342;
+  border-top-left-radius: 20px;
+}
+
+thead {
+  background-color: black;
+  color: #ffffff;
+}
+
+tbody {
+  background-color: rgb(206, 186, 186);
+  text-align: center;
+}
+
+tbody tr:nth-child(2n) {
+  background-color: aqua;
+}
+
+tbody tr:nth-child(2n + 1) {
+  background-color: rgba(25, 136, 43, 0.493);
+}
+
+td:hover {
+  background-color: rgb(234, 0, 255);
+}
+
+table {
+  border-radius: 20px;
+}
+
+.input {
+  border-bottom: 10px solid #346342;
+  padding-bottom: 5px;
+  margin-bottom: 5px;
+  /* float: left;
+  float: top; */
+  /* text-align: right; */
+  width: 400px;
+}
+
+form {
+  margin: 10px;
+}
+.botton {
+  float: right;
+}
+
+label {
+  border: 1px solid #f15166;
+}
+
+.space {
+  float: left;
+}
+textarea {
+  resize: none;
+}
+
+fieldset{
+  border-radius: 20px;
+  margin-bottom: 20px;
 }
