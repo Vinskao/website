@@ -1,11 +1,35 @@
 h2 {
+    color: yellow;
     border-radius: 3;
     text-align: center;
     font-size: 90px;
-    color: red
 }
 
 #b1 {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: blue;
+    text-transform: capitalize;
+}
+
+p {
+    color: green;
+}
+
+a:link {
+    text-decoration: double;
+    color: red;
+}
+
+a:visited {
+    color: orange;
+}
+
+a:hover {
+    text-shadow: 1cap;
+    color: #adc29c;
+    text-rendering: var(90px);
+}
+
+a:active {
+    font-size: x-large;
 }
