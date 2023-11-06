@@ -1,0 +1,21 @@
+.float-item {
+  background: #ccc;
+  width: 100px;
+  height: auto;
+  margin: 10px;
+  float: left;
+  border: 5px solid #15616c;
+}
+.content {
+  padding: 10px;
+}
+.container {
+  width: 300px;
+  margin: 0 auto;
+}
+
+figure {
+  background: #6b1111;
+  width: 10px;
+  padding: 1px;
+}
