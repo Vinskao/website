@@ -1,0 +1,33 @@
+.box {
+  height: 100px;
+  width: 200px;
+  border: 5px solid navy;
+  overflow: auto;
+  margin: 0 auto; /* Center the box horizontally */
+}
+
+.lis {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+  display: block;
+  flex-direction: row; /* Arrange items in a horizontal row */
+  background-color: blueviolet;
+  overflow: auto;
+}
+
+.lis li {
+  width: 7em;
+  float: left;
+  background-color: blueviolet;
+}
+
+.lis li a {
+  overflow: auto;
+  text-align: center;
+}
+
+.lis li a:hover {
+  background-color: aqua;
+  display: block;
+}

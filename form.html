@@ -5,79 +5,111 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>form</title>
     <link rel="stylesheet" href="styles/st1.css" />
+    <link rel="stylesheet" href="form.css" />
   </head>
   <body>
     <form method="get">
-        <fieldset>
-            <legend>
-基本資料
-            </legend>
-            <div class="input">
-                <label for="account1">帳號:</label
-                ><input
-                  id="account1"
-                  type="name"
-                  name="name"
-                  value="請輸入"
-                  size="10"
-                />
-              </div>
-        
-              <div class="input">
-                <label for="passw">密碼:</label
-                ><input type="password" id="passw" name="pwd" value="請輸入" />
-              </div>
-        
-              <div class="input">
-                <label>
-                  <input type="radio" name="sex" id="sex" value="man" />男
-                  <input type="radio" name="sex" id="sex" value="woman"/>女
-                </label>
-              </div>
-        
-              <div class="input">
-                <label>
-                  <input type="checkbox" name="hobbit" id="hobbit" value="play" />玩樂
-                  <input type="checkbox" name="hobbit" id="hobbit" value="sport"/>運動
-                </label>
-              </div>
-        </fieldset>
-        <fieldset>
-            <legend>進階資料</legend>
-            <div class="input">
+      <fieldset>
+        <legend>基本資料</legend>
+        <div class="input">
+          <label for="account1">帳號:</label
+          ><input
+            id="account1"
+            type="name"
+            name="name"
+            size="10"
+            autocomplete="off"
+            placeholder="Enter your search query"
+            autofocus
+          />
+        </div>
 
-                <select multiple name="pet">
-                    <option value="dog">Dog</option>
-                    <option value="cat">Cat</option>
-                    <option value="hamster">Hamster</option>
-                    <option value="parrot">Parrot</option>
-                    <option value="spider">Spider</option>
-                    <option value="goldfish">Goldfish</option>
-                </select>
-            </div>
-            <div>
-                <label>
-                    <input type="file" name="file" id="">上傳身分證
-                </label>
-            </div>
-              <div class="input">
-                意見:<textarea
-                  class="space"
-                  name="comment"
-                  rows="4"
-                  cols="50"
-                  readonly="readonly"
-                ></textarea>
-              </div>
-              
-              
-        </fieldset>
-        <div class="botton">
-            <button type="submit">SUMMIT</button>
-            <input type="reset" value="清除表單" />
-          </div>
-      
-      
+        <div class="input">
+          <label for="passw">密碼:</label
+          ><input type="password" id="passw" name="pwd" value="請輸入" />
+        </div>
+
+        <div class="input">
+          <label>
+            <input type="radio" name="sex" id="sex" value="man" />男
+            <input type="radio" name="sex" id="sex" value="woman" />女
+          </label>
+        </div>
+        <div class="input">
+          <p>
+            <label class="subtitle">ID:</label>
+            <input type="" name="id" pattern="[a-z,A-Z]{1}[1-2,8-9]{1}\d{8}" />
+          </p>
+        </div>
+
+        <div class="input">
+          <label>
+            <input type="checkbox" name="hobbit" id="hobbit" value="play" />玩樂
+            <input
+              type="checkbox"
+              name="hobbit"
+              id="hobbit"
+              value="sport"
+            />運動
+          </label>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>進階資料</legend>
+        <div class="input">
+          <select multiple name="pet">
+            <option value="dog">Dog</option>
+            <option value="cat">Cat</option>
+            <option value="hamster">Hamster</option>
+            <option value="parrot">Parrot</option>
+            <option value="spider">Spider</option>
+            <option value="goldfish">Goldfish</option>
+          </select>
+        </div>
+        <div>
+          <label>
+            <input type="file" name="file" id="" multiple />上傳身分證
+          </label>
+        </div>
+        <code>
+          &lt;h2>&lt;a
+          href="https://zh.wikipedia.org/wiki/HTML5">HTML5&lt;/a>&lt;/h2>
+        </code>
+
+        <div class="input">
+          <label for="ice-cream-choice">Choose a flavor:</label>
+          <input
+            list="ice-cream-flavors"
+            id="ice-cream-choice"
+            name="ice-cream-choice"
+          />
+
+          <datalist id="ice-cream-flavors">
+            <option value="Chocolate"></option>
+            <option value="Coconut"></option>
+            <option value="Mint"></option>
+            <option value="Strawberry"></option>
+            <option value="Vanilla"></option>
+          </datalist>
+        </div>
+
+        <div class="input">
+          意見:<textarea
+            class="space"
+            name="comment"
+            rows="4"
+            cols="50"
+            readonly="readonly"
+          >
+  This text cannot be changed, but you can copy it.
+        </textarea
+          >
+        </div>
+      </fieldset>
+      <div class="botton">
+        <button type="submit">SUMMIT</button>
+        <input type="reset" value="清除表單" />
+      </div>
     </form>
   </body>
 </html>

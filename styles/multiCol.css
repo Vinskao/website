@@ -1,0 +1,39 @@
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.column1 {
+  width: 100%; /* Adjust the width as needed */
+  border: 1px solid #ccc;
+  padding: 10px;
+  height: 100%;
+  column-count: 3;
+  background-image: url("../images/dog.jpg");
+  background-repeat-x: no-repeat;
+  background-position: bottom right;
+  background-size: contain;
+}
+
+.column2 {
+  width: 100%; /* Adjust the width as needed */
+  border: 1px solid #ccc;
+  padding: 10px;
+  height: 100%;
+  column-count: 2;
+  background-image: url("../images/bird150.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.title {
+  font-size: 30px;
+  text-align: center;
+}
+body {
+  background-image: url("../images/dog.jpg"); /* Replace with the URL of your image */
+  background-size: cover; /* Controls the size of the background image */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  background-attachment: fixed;
+}

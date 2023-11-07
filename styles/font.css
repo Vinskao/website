@@ -1,0 +1,23 @@
+@font-face {
+  font-family: font1;
+  src: url(fonts/JustOldFashion.ttf);
+}
+
+.font1 {
+  font-family: font1;
+  color: orange !important;
+}
+
+@font-face {
+  font-family: font2;
+  src: url(fonts/SCRIPTIN.ttf);
+}
+
+.font2 {
+  font-family: font2;
+}
+
+.goog {
+  font-family: "Tangerine", serif;
+  font-size: 4px;
+}
